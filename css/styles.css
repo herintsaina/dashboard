@@ -1,8 +1,40 @@
+/***** FONT FAMILY ********/
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url('/assets/font-familly/Epilogue/Epilogue-Medium.ttf'),
+         url('/assets/font-familly/Epilogue/Epilogue-Bold.ttf'),
+         url('/assets/font-familly/Epilogue/Epilogue-Regular.ttf'),
+         url('/assets/font-familly/Epilogue/Epilogue-Light.ttf'),
+         url('/assets/font-familly/Epilogue/Epilogue-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/font-familly/Inter/Inter-Medium.ttf'),
+         url('/assets/font-familly/Inter/Inter-Bold.ttf'),
+         url('/assets/font-familly/Inter/Inter-Regular.ttf'),
+         url('/assets/font-familly/Inter/Inter-Light.ttf'),
+         url('/assets/font-familly/Inter/Inter-Thin.ttf');
+}
+
 /***** REGISTRATION ********/
 body {
     background-color: #BDA3EFFF;
 }
 
+.font-inter {
+    font-family: 'Inter';
+}
+
+.font-epilogue {
+    font-family: 'Epilogue';
+}
+
 .container-registration{
     height: 100vh;
 }
+
+/************** Responsive REGISTRATION*****************/
+
+

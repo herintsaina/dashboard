@@ -4,45 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
+    <link rel="shortcut icon" href="/assets/images/icon/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="m-0">
-    <div class="container m-auto">
-        <div class="container-registration pt-5 pb-5 relative">
+    <div class="container  m-auto">
+        <div class="container-registration pt-5 pb-5 relative sm:w-4/5 m-auto">
             <nav class="absolute"><img src="./assets/images/icon/logo.png" alt="logo" ></nav>
-            <div class="content-registration pt-10 flex h-full">
-                <div class="picture-registration w-2/4">
-                    <img class="h-full" style="transform: translateY(20px);" src="./assets/images/illustration/Group-200.png" alt="Picture Registration">
+            <div class="content-registration pt-10 flex h-full sm:flex-col ">
+                <div class="picture-registration w-2/4 flex justify-center sm:w-full">
+                    <img class="h-full sm:translate-y-0 translate-y-10" style="" src="./assets/images/illustration/Group-200.png" alt="Picture Registration">
                 </div>
-                <div class="form-registration w-2/4">
-                    <div class="content-form bg-white w-3/5 m-auto rounded-lg">
-                        <div class="title-form text-center py-3 w-4/5 m-auto">
-                            <h2 style="font-size: 1.5rem;">Create an account </h2>
-                            <span>Star your 30 day free trial</span>
-                            <div class="icon-registrtion flex mt-5 justify-between gap-3">
-                                <div class="picture-icon flex items-center justify-center w-20 h-9 rounded-2xl" style="background-color: #fef1f1;">
-                                    <img class="h-4/5" src="./assets/images/icon/icons_google.png" alt="icons_google">
-                                </div>
-                                <div class="picture-icon flex items-center justify-center w-20 h-9 rounded-2xl" style="background-color: #f3f6fb;">
-                                    <img class="h-4/5" src="./assets/images/icon/icons_facebook.png" alt="icons_facebook">
-                                </div>
-                                <div class="picture-icon flex items-center justify-center w-20 h-9 rounded-2xl" style="background-color: #f3f4f6;">
-                                    <img class="h-4/5" src="./assets/images/icon/icons_apple.png" alt="icons_apple">
-                                </div>
+                <div class="form-registration w-2/4 sm:w-full">
+                    <div class="content-form bg-white w-3/5 m-auto rounded-lg sm:w-full">
+                        <div class="title-form text-center pt-10 pb-3 w-4/5 m-auto">
+                            <h2 class="font-epilogue leading-6" style="font-size: 1.5rem;">Create an account </h2>
+                            <span class="font-inter text-[#9095A0FF] text-xs">Star your 30 day free trial</span>
+                            <div class="icon-registrtion flex mt-5 justify-center gap-3">
+                                <a href="#" class="picture-icon flex hover:bg-[#FBD2D0FF] items-center justify-center w-20 h-9 rounded-2xl cursor-pointer" style="background-color: #fef1f1;">
+                                    <img class="h-3/5" src="./assets/images/icon/icons_google.png" alt="icons_google">
+                                </a>
+                                <a href="#" class="picture-icon flex items-center justify-center w-20 h-9 rounded-2xl cursor-pointer" style="background-color: #f3f6fb;">
+                                    <img class="h-3/5" src="./assets/images/icon/icons_facebook.png" alt="icons_facebook">
+                                </a>
+                                <a href="#" class="picture-icon flex items-center justify-center w-20 h-9 rounded-2xl cursor-pointer" style="background-color: #f3f4f6;">
+                                    <img class="h-3/5" src="./assets/images/icon/icons_apple.png" alt="icons_apple">
+                                </a>
                             </div>
                         </div>
 
-                        <form class="input-form py-5 flex flex-col w-4/5 m-auto">
-                            <label for="full-name">Full name</label>
-                            <input class="mt-1 p-3 rounded-3xl" style="background-color: #f3f4f6;" type="text" id="full-name" placeholder="John Doe">
-                            <label for="email">Email</label>
-                            <input class="mt-1 p-3 rounded-3xl" style="background-color: #f3f4f6;" type="text" id="email" placeholder="exemple.email@gmail.com">
-                            <label for="password">Password</label>
-                            <input class="mt-1 p-3 rounded-3xl" style="background-color: #f3f4f6;" type="text" id="password" placeholder="Enter at least 8+ characters">
+                        <form class="input-form py-5 flex flex-col w-4/5 m-auto font-inter">
+                            <label for="full-name" class="font-bold">Full name</label>
+                            <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="full-name" placeholder="John Doe">
+                            <label for="email" class="font-bold pt-2">Email</label>
+                            <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="email" placeholder="exemple.email@gmail.com">
+                            <label for="password" class="font-bold pt-2">Password</label>
+                            <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="password" placeholder="Enter at least 8+ characters">
                         </form>
-                        <a href="#" class="text-white text-center w-4/5 m-auto flex justify-center p-1 rounded-3xl" style="background-color: #00bdd6;">Sign up</a>
-                        <div class="w-4/5 m-auto flex justify-center mt-2 pb-3">Been here before ? <a href="#">Log in</a></div>
+                        <a href="#" class="text-white text-center hover:bg-[#00A9C0FF] font-inter w-4/5 m-auto flex justify-center p-2 rounded-3xl" style="background-color: #00bdd6;">Sign up</a>
+                        <div class="w-4/5 m-auto flex justify-center mt-2 pb-3 text-[#323842FF] text-xs">Been here before ? <a href="#" class="text-[#00BDD6FF] ps-1"> Log in</a></div>
                     </div>
                 </div>
             </div>
