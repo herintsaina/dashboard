@@ -1,3 +1,5 @@
+/** npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
 /***** FONT FAMILY ********/
 
 @font-face {
@@ -35,6 +37,32 @@ body {
     height: 100vh;
 }
 
+.form-registration {
+    display: flex;
+    align-items: center;
+}
+
 /************** Responsive REGISTRATION*****************/
 
+/* @media (min-width:320px) {
+    .container-registration {
+        width: 90%;
+    }
 
+    /***** picture registration ***
+
+
+    .picture-registration {
+        display: none;
+    }
+
+    /******* form registration *******
+
+    .form-registration {
+        width: 100%;
+    }
+
+    .content-form{
+        width: 100%;
+    }
+} */
