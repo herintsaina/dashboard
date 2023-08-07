@@ -33,9 +33,7 @@ body {
     font-family: 'Epilogue';
 }
 
-.container-registration{
-    height: 100vh;
-}
+
 
 .form-registration {
     display: flex;
