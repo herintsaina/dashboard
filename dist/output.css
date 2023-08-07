@@ -770,6 +770,10 @@ video {
 }
 
 @media (min-width: 320px) {
+  .min-\[320px\]\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .min-\[320px\]\:hidden {
     display: none;
   }
