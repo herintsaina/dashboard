@@ -766,6 +766,10 @@ video {
 }
 
 @media (min-width: 320px) {
+  .min-\[320px\]\:hidden {
+    display: none;
+  }
+
   .min-\[320px\]\:h-9 {
     height: 2.25rem;
   }
@@ -803,6 +807,10 @@ video {
 
   .min-\[320px\]\:pt-16 {
     padding-top: 4rem;
+  }
+
+  .min-\[320px\]\:pt-24 {
+    padding-top: 6rem;
   }
 }
 
