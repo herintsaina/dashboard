@@ -42,6 +42,12 @@ body {
 
 /************** Responsive REGISTRATION*****************/
 
+@media (min-height:621px) {
+    .content-registration {
+        padding-top: 0;
+    }
+}
+
 /* @media (min-width:320px) {
     .container-registration {
         width: 90%;

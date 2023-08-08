@@ -10,14 +10,14 @@
 </head>
 <body class="m-0">
     <div class="container  m-auto">
-        <div class="container-registration  pt-5 pb-5 h-screen relative  min-[320px]:pb-0  sm:w-4/5 m-auto">
-            <nav class="absolute min-[320px]:h-9 min-[320px]:translate-x-5	"><img class="h-full" src="./assets/images/icon/logo.png" alt="logo" ></nav>
+        <div class="container-registration  pt-5 pb-5 h-screen relative  min-[320px]:pb-0 min-[420px]:w-4/5  sm:w-4/5 m-auto">
+            <nav class="absolute min-[320px]:h-9 min-[320px]:translate-x-5 min-[420px]:translate-x-0 min-[420px]:h-auto	"><img class="h-full" src="./assets/images/icon/logo.png" alt="logo" ></nav>
             <div class="content-registration pt-10 flex h-full min-[320px]:pt-24 min-[320px]:flex-col  ">
                 <div class="picture-registration w-2/4 flex justify-center min-[320px]:hidden min-[320px]:justify-end min-[320px]:w-full sm:flex">
                     <img class="h-full sm:translate-y-0  translate-y-10 min-[320px]:w-1/2 min-[320px]:translate-y-0" style="" src="./assets/images/illustration/Group-200.png" alt="Picture Registration">
                 </div>
                 <div class="form-registration w-2/4 min-[320px]:w-full min-[320px]:h-full  ">
-                    <div class="content-form bg-white w-3/5 m-auto rounded-lg min-[320px]:w-full min-[320px]:mb-0 ">
+                    <div class="content-form bg-white w-3/5 m-auto rounded-lg min-[320px]:w-full min-[320px]:mb-0 min-[420px]:mb-auto ">
                         <div class="title-form text-center pt-10 pb-3 w-4/5 m-auto">
                             <h2 class="font-epilogue leading-6" style="font-size: 1.5rem;">Create an account </h2>
                             <span class="font-inter text-[#9095A0FF] text-xs">Star your 30 day free trial</span>
@@ -39,8 +39,25 @@
                             <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="full-name" placeholder="John Doe">
                             <label for="email" class="font-bold pt-2">Email</label>
                             <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="email" placeholder="exemple.email@gmail.com">
-                            <label for="password" class="font-bold pt-2">Password</label>
-                            <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="password" placeholder="Enter at least 8+ characters">
+                            <!-- <label for="password" class="font-bold pt-2">Password</label>
+                            <input class="mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]"  style="outline: none;" type="text" id="password" placeholder="Enter at least 8+ characters"> -->
+
+                            <div class="input-show-hide pt-2">
+                                <label class="font-bold pt-2" for="password">
+                                    Password
+                                  </label>
+                                <div class="relative w-full">
+                                    <div class="absolute inset-y-0 right-0 flex items-center px-2">
+                                      <input class="hidden js-password-toggle" id="toggle" type="checkbox" />
+                                      <label class=" h-7  cursor-pointer js-password-label" for="toggle">
+                                        <img class="h-full pt-1" src="./assets/images/icon/eye-close.png" alt="">
+                                      </label>
+                                    </div>
+                                    <input class="appearance-none w-full mt-1 p-2 ps-3 rounded-3xl outline-none bg-[#f3f4f6]  js-password" placeholder="Enter at least 8+ characters" id="password" type="password" autocomplete="off"
+                                    />
+                                </div>
+                            </div>
+
                         </form>
                         <a href="#" class="text-white text-center hover:bg-[#00A9C0FF] font-inter w-4/5 m-auto flex justify-center p-2 rounded-3xl" style="background-color: #00bdd6;">Sign up</a>
                         <div class="w-4/5 m-auto flex justify-center mt-2 pb-3 text-[#323842FF] text-xs">Been here before ? <a href="#" class="text-[#00BDD6FF] ps-1"> Log in</a></div>
@@ -49,5 +66,7 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
